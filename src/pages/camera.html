@@ -10,8 +10,8 @@
         href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="../css/camera.css">
-    <link rel="icon" href="/src/assets/favicon.ico">
+    <link rel="stylesheet" href="/sprint2-web/src/css/camera.css">
+    <link rel="icon" href="/sprint2-web/src/assets/favicon.ico">
     <title>Câmera — Jovi</title>
 </head>
 
@@ -28,11 +28,11 @@
 
         <div class="camera-wrapper">
             <video id="camera-feed" autoplay loop muted playsinline>
-                <source src="../assets/loopmesa.mp4" id="video-src">
+                <source src="/sprint2-web/src/assets/loopmesa.mp4" id="video-src">
             </video>
 
             <div class="resultado-foto" id="resultado-foto">
-                <img src="../assets/caderno.png" alt="Digitalização">
+                <img src="/sprint2-web/src/assets/caderno.png" alt="Digitalização">
             </div>
 
             <div class="camera-fallback" id="camera-fallback"></div>
@@ -70,7 +70,7 @@
         <div class="controles">
             <button class="btn-galeria" id="btn-galeria" onclick="irParaFoto()">
                 <span class="material-icons" id="galeria-icone">image</span>
-                <img src="../assets/caderno.png" id="galeria-foto" alt="Foto">
+                <img src="/sprint2-web/src/assets/caderno.png" id="galeria-foto" alt="Foto">
             </button>
             <button class="btn-captura" id="btn-captura">
                 <div class="captura-inner"></div>
@@ -83,7 +83,7 @@
         <footer class="barra-inferior">
             <button class="material-icons" onclick="history.back()">arrow_back</button>
             <button class="material-icons"
-                onclick="window.location.href='./home.html'">radio_button_unchecked</button>
+                onclick="window.location.href='/sprint2-web/src/pages/home.html'">radio_button_unchecked</button>
             <button class="material-icons" onclick="alert('Abrir apps recentes')">menu</button>
         </footer>
     </div>

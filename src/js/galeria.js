@@ -1,7 +1,7 @@
 const fotos = [
-    { src: '../assets/digitalizacao.png', titulo: 'Design Thinking - Process', nota: 2 },
-    { src: '../assets/holiday.png', titulo: 'Holiday at Sea', nota: 0 },
-    { src: '../assets/traducao.png', titulo: 'Férias no Mar (Tradução)', nota: 1 },
+    { src: '/sprint2-web/src/assets/digitalizacao.png', titulo: 'Design Thinking - Process', nota: 2 },
+    { src: '/sprint2-web/src/assets/holiday.png', titulo: 'Holiday at Sea', nota: 0 },
+    { src: '/sprint2-web/src/assets/traducao.png', titulo: 'Férias no Mar (Tradução)', nota: 1 },
 ];
 
 let fotoAtual = null;
@@ -197,9 +197,9 @@ function abrirVisualizadorPDF(tipo) {
     document.getElementById('pdf-titulo').textContent = tipo === 'texto' ? 'Texto em PDF' : 'Foto em PDF';
 
     const pdfPorFoto = {
-        0: { foto: '../assets/DesignCadernoPDF.png', texto: '../assets/designTextoPDF.png' },
-        1: { foto: '../assets/HolidayCadernoPDF.png', texto: '../assets/holidayTextoPDF.png' },
-        2: { foto: '../assets/FeriasCadernoPDF.png', texto: '../assets/FeriasTextoPDF.png' },
+        0: { foto: '/sprint2-web/src/assets/DesignCadernoPDF.png', texto: '/sprint2-web/src/assets/designTextoPDF.png' },
+        1: { foto: '/sprint2-web/src/assets/HolidayCadernoPDF.png', texto: '/sprint2-web/src/assets/holidayTextoPDF.png' },
+        2: { foto: '/sprint2-web/src/assets/FeriasCadernoPDF.png', texto: '/sprint2-web/src/assets/FeriasTextoPDF.png' },
     };
 
     const imagens = pdfPorFoto[fotoAtual];
