@@ -5,7 +5,6 @@ function validarEmail(email) {
     return re.test(email);
 }
 
-let usuarioCriado = "";
 let emailUsuario = "";
 let senhaLogin = "";
 let jaCriou = false;
@@ -16,7 +15,6 @@ function criarUsuario(){
         return;
     }
 
-    usuarioCriado = prompt("Crie um nome de usuário:");
     do {
     emailUsuario = prompt("Informe seu email:");
     if(!validarEmail(emailUsuario)){
@@ -25,7 +23,7 @@ function criarUsuario(){
 } while(!validarEmail(emailUsuario));
     senhaLogin = prompt("Crie uma senha:");
 
-    if(usuarioCriado && senhaLogin){
+    if(senhaLogin){
         jaCriou = true;
         alert("Usuário criado com sucesso!");
     } else {
@@ -35,17 +33,20 @@ function criarUsuario(){
 criarUsuario();
 
 function logar(){
-    var login = document.getElementById('login').value;
     var email = document.getElementById('email').value;
     var senha = document.getElementById('senha').value;
+    var mensagem = document.getElementById('mensagem');
 
-    if(login == "" || email == "" || senha == ""){
+    if(email == "" || senha == ""){
         mensagem.innerText = "Preencha todos os campos!";
         return;
     }
-    if(login == usuarioCriado && email == emailUsuario && senha == senhaLogin){
+    if(email == emailUsuario && senha == senhaLogin){
+        mensagem.innerText = "";
+        sessionStorage.setItem('logado', 'true');
+        window.location.href = "./src/pages/home.html"
         alert('Sucesso!')
     } else{
-        alert('Usuário, email ou senha incorretos');
+        alert('Email ou senha incorretos');
     }
 }
