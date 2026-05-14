@@ -1,3 +1,4 @@
+// alert de bem-vindo
 alert("Bem-vindo ao site!");
 
 function validarEmail(email) {
@@ -18,6 +19,7 @@ function criarUsuario(){
     do {
     emailUsuario = prompt("Informe seu email:");
     if(!validarEmail(emailUsuario)){
+        //manda o usuário digitar um email válido
         alert("Digite um email válido!");
     }
 } while(!validarEmail(emailUsuario));
@@ -25,8 +27,10 @@ function criarUsuario(){
 
     if(senhaLogin){
         jaCriou = true;
+        // avisa ao usuário que o usuário foi criado com sucesso
         alert("Usuário criado com sucesso!");
     } else {
+        // avisa quando acontece um erro na digitação
         alert("Preencha corretamente!");
     }
 }
@@ -45,8 +49,10 @@ function logar(){
         mensagem.innerText = "";
         sessionStorage.setItem('logado', 'true');
         window.location.href = "./src/pages/home.html"
+        //avisa que o login foi um sucesso
         alert('Sucesso!');
     } else{
+        // avisa que o email ou a senha estão incorretos
         alert('Email ou senha incorretos');
     }
 }
