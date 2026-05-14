@@ -50,7 +50,7 @@ function logar(){
     if(email == emailUsuario && senha == senhaLogin){
         mensagem.innerText = "";
         sessionStorage.setItem('logado', 'true');
-        window.location.href = "./src/pages/home.html"
+        window.location.href = "/sprint2-web/src/pages/home.html"
         //avisa que o login foi um sucesso
         alert('Sucesso!');
     } else{
