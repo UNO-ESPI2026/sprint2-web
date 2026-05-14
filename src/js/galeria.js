@@ -72,6 +72,7 @@ function abrirNota() {
     const notaCompleta = notasCompletas[foto.nota];
     sessionStorage.setItem('nota_titulo', notaCompleta.titulo);
     sessionStorage.setItem('nota_corpo', notaCompleta.corpo);
+    alert("Abrindo o Bloco de Notas");
     window.location.href = 'nota-editor.html';
 }
 
@@ -92,6 +93,7 @@ const notasCompletas = [
 
 function abrirGrifar() {
     fecharMenuAnotacoes();
+    alert("Abrindo modo Grifar");
     document.getElementById('overlay-grifar').classList.remove('oculto');
     document.querySelector('.foto-header').style.display = 'none';
     document.querySelector('.foto-acoes').style.display = 'none';
@@ -210,5 +212,6 @@ function fecharVisualizadorPDF() {
 }
 
 function abrirResumo() {
+    alert("Abrindo o app IA");
     window.location.href = `ia.html?foto=${fotoAtual}`;
 }

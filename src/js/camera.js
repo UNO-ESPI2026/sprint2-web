@@ -222,7 +222,7 @@ function copiarTexto(tipo) {
 }
 
 function irParaFoto() {
-    alert("Indo para a Galeria")
+    alert("Indo para a Galeria");
     if (modoAtual === 'digitalizar') {
         window.location.href = '../pages/galeria.html?foto=0';
     } else if (modoAtual === 'traduzir') {

@@ -45,7 +45,7 @@ function logar(){
         mensagem.innerText = "";
         sessionStorage.setItem('logado', 'true');
         window.location.href = "./src/pages/home.html"
-        alert('Sucesso!')
+        alert('Sucesso!');
     } else{
         alert('Email ou senha incorretos');
     }
