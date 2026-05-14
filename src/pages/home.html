@@ -28,19 +28,19 @@
         <main class="home">
             <h1 class="home-titulo">Jovi Study Lens</h1>
             <section class="apps">
-                <a href="/src/pages/camera.html" class="app">
+                <a href="/src/pages/camera.html" onclick="irPara('Câmera')" class="app">
                     <span class="material-icons">photo_camera</span>
                     <p>Câmera</p>
                 </a>
-                <a href="/src/pages/galeria.html" class="app">
+                <a href="/src/pages/galeria.html" onclick="irPara('Galeria')" class="app">
                     <span class="material-icons">photo_library</span>
                     <p>Galeria</p>
                 </a>
-                <a href="/src/pages/notas.html" class="app">
+                <a href="/src/pages/notas.html" onclick="irPara('Notas')" class="app">
                     <span class="material-icons">note_alt</span>
                     <p>Notas</p>
                 </a>
-                <a href="/src/pages/ia.html" class="app">
+                <a href="/src/pages/ia.html" onclick="irPara('IA')" class="app">
                     <span class="material-icons">auto_awesome</span>
                     <p>IA</p>
                 </a>
@@ -53,6 +53,8 @@
             <button class="material-icons" onclick="alert('Abrir apps recentes')">menu</button>
         </footer>
     </div>
+
+    <script src="../js/home.js"></script>
 </body>
 
 </html>
