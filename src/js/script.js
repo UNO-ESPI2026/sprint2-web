@@ -17,12 +17,14 @@ function criarUsuario(){
     }
 
     do {
+        //pede para que o usuário insira um email válido
     emailUsuario = prompt("Informe seu email:");
     if(!validarEmail(emailUsuario)){
         //manda o usuário digitar um email válido
         alert("Digite um email válido!");
     }
 } while(!validarEmail(emailUsuario));
+// pede para o usuário inserir uma senha válida
     senhaLogin = prompt("Crie uma senha:");
 
     if(senhaLogin){
